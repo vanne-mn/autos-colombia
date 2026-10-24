@@ -1,0 +1,257 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.navbar {
+    background: #0f2747;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.contenedor {
+    width: 86%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.encabezado {
+    margin-bottom: 30px;
+}
+
+.encabezado h1 {
+    font-size: 32px;
+    color: #0f2747;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 39, 71, 0.06);
+    border-left: 5px solid #0284c7;
+}
+
+.tarjeta h3 {
+    font-size: 15px;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f2747;
+}
+
+.panel {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 39, 71, 0.06);
+    overflow-x: auto;
+}
+
+.panel h2 {
+    margin-bottom: 20px;
+    color: #0f2747;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background: #eaf3fb;
+}
+
+th, td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    color: #0f2747;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+.estado {
+    display: inline-block;
+    background: #dcfce7;
+    color: #166534;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    padding: 25px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .encabezado h1 {
+        font-size: 26px;
+    }
+
+    .navbar {
+        padding: 20px 5%;
+    }
+}
+
+
+
+.boton {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.boton:hover {
+    background: #0369a1;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: #e2e8f0;
+    color: #475569;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-weight: 600;
+    color: #334155;
+    font-size: 14px;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: white;
+    color: #1e293b;
+    font: inherit;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: 2px solid #38bdf8;
+    border-color: #0284c7;
+}
+
+.campo-boton {
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.mensaje {
+    padding: 13px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.mensaje-exito {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.mensaje-error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+@media (max-width: 650px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+}

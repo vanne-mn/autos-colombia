@@ -1,0 +1,14 @@
+
+# Configuración local y archivos sensibles
+.env
+.env.*
+!.env.example
+
+# Copias de seguridad y archivos temporales
+*.bak
+*.tmp
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
